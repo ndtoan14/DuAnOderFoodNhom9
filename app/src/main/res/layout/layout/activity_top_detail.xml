@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Admin.TopDetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_img_user"
+
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="200dp">
+
+        <ImageView
+            android:id="@+id/img_top_detail"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_iduser_detail"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_img_user"/>
+    <TextView
+        android:id="@+id/tv_ten_detail"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@id/tv_iduser_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_email_detail"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@id/tv_ten_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_phone_detail"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@id/tv_email_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_diachi_detail"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@id/tv_phone_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+
+    android:id="@+id/tv_ttien_detail"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tv_diachi_detail"
+    android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
