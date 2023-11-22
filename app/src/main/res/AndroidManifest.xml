@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="ph29152.fptpoly.duanoderfoodnhom1">
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -28,6 +29,8 @@
                     android:host="app"
                     android:scheme="demozpdk" />
             </intent-filter>
+
+
     </application>
 
 </manifest>
