@@ -1,26 +1,21 @@
 {
   "project_info": {
-    "project_number": "1003317410083",
-    "project_id": "dan1-3d07e",
-    "storage_bucket": "dan1-3d07e.appspot.com"
+    "project_number": "600165959975",
+    "project_id": "duan1-78cbb",
+    "storage_bucket": "duan1-78cbb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1003317410083:android:906154feb250c6d330b496",
+        "mobilesdk_app_id": "1:600165959975:android:351893aa2b6be52ab40102",
         "android_client_info": {
           "package_name": "toanndph37473.com.example.duanoderfoodnhom9"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "1003317410083-b0387v49asag5c83v9np4s48uggefan4.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBuxkDXiDKQDN_8vh2A90rnMAfvMxZcHLs"
+          "current_key": "AIzaSyCOl0wWvQsR4JRc9lIvlkqBMxl-bC_dzLI"
         }
       ],
       "services": {
