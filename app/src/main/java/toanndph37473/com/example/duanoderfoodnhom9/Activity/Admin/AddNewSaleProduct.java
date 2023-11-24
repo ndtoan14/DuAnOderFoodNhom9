@@ -34,7 +34,7 @@ public class AddNewSaleProduct extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_new_product);
+        setContentView(R.layout.activity_add_new_product);
         dao = new DAO();
         anhxa();
 

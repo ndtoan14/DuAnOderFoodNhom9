@@ -5,50 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.Admin.NewOrderDetailActivity">
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/btnDonHangBiHuyDetailBack"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="20dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="30dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/imgBack"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_back" />
-        </com.google.android.material.card.MaterialCardView>
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Thông tin đơn hàng"
-            android:textColor="#E53935"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginTop="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcvThongTinDonHangBiHuy"
+            android:id="@+id/rcvThongTinDonHang"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="15dp"
+
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.147"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView41" />
 
@@ -64,12 +46,12 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <TextView
-            android:id="@+id/tvThoiGianBiHuy"
+            android:id="@+id/tvThoiGianDat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="TextView"
-            android:textColor="#E53935"
+            android:textColor="#00BF08"
             android:textSize="16dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +60,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvIdDonHang" />
 
         <TextView
-            android:id="@+id/tvTenNguoiDatBiHuy"
+            android:id="@+id/tvTenNguoiDat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -87,11 +69,11 @@
             android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tvThoiGianBiHuy"
-            app:layout_constraintTop_toBottomOf="@+id/tvThoiGianBiHuy" />
+            app:layout_constraintStart_toStartOf="@+id/tvThoiGianDat"
+            app:layout_constraintTop_toBottomOf="@+id/tvThoiGianDat" />
 
         <TextView
-            android:id="@+id/tvDiaChiBiHuy"
+            android:id="@+id/tvDiaChi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -100,11 +82,11 @@
             android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tvTenNguoiDatBiHuy"
-            app:layout_constraintTop_toBottomOf="@+id/tvTenNguoiDatBiHuy" />
+            app:layout_constraintStart_toStartOf="@+id/tvTenNguoiDat"
+            app:layout_constraintTop_toBottomOf="@+id/tvTenNguoiDat" />
 
         <TextView
-            android:id="@+id/tvSoDienThoaiBiHuy"
+            android:id="@+id/tvSoDienThoai"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -113,8 +95,8 @@
             android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tvDiaChiBiHuy"
-            app:layout_constraintTop_toBottomOf="@+id/tvDiaChiBiHuy" />
+            app:layout_constraintStart_toStartOf="@+id/tvDiaChi"
+            app:layout_constraintTop_toBottomOf="@+id/tvDiaChi" />
 
         <TextView
             android:id="@+id/textView41"
@@ -126,10 +108,47 @@
             android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tvSoDienThoaiBiHuy"
-            app:layout_constraintTop_toBottomOf="@+id/tvSoDienThoaiBiHuy" />
+            app:layout_constraintStart_toStartOf="@+id/tvSoDienThoai"
+            app:layout_constraintTop_toBottomOf="@+id/tvSoDienThoai" />
 
+        <TextView
+            android:id="@+id/tvTongTienDH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textColor="#FB0202"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView41"
+            app:layout_constraintTop_toBottomOf="@+id/rcvThongTinDonHang" />
 
+        <Button
+            android:id="@+id/btnXacNhanDH"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_button"
+            android:text="Xác nhận đơn hàng"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTongTienDH" />
 
+        <Button
+            android:id="@+id/btnHuyDH"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_button"
+            android:text="Huỷ đơn hàng"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnXacNhanDH" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </ScrollView>
