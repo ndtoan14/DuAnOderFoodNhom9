@@ -21,7 +21,7 @@ import toanndph37473.com.example.duanoderfoodnhom9.Activity.ProductReviewsActivi
 import toanndph37473.com.example.duanoderfoodnhom9.Model.Notification;
 import toanndph37473.com.example.duanoderfoodnhom9.R;
 
-public class NotificationAdapter {
+public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.MyViewHolder>{
     private Context context;
     private List<Notification> list = new ArrayList<>();
 
