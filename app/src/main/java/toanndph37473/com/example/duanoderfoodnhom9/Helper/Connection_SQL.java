@@ -14,7 +14,7 @@ public class Connection_SQL {
     Context context;
     @SuppressLint("NewApi")
     public Connection SQLconnection(){
-        String ip = "192.168.0.104", port = "1433",data = "YummyApp",user = "sa",password = "Password.1";
+        String ip = "10.24.58.149", port = "1433",data = "YummyApp",user = "SA",password = "Password.1";
         StrictMode.ThreadPolicy tp = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(tp);
         String URLcon = null;

@@ -4,10 +4,11 @@
     package="toanndph37473.com.example.duanoderfoodnhom9">
 
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-
+    <uses-permission android:name="android.permission.CALL_PHONE"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
 
     <application
         android:allowBackup="true"
@@ -19,7 +20,55 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DuAnOderFoodNhom9"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Activity.SelectInfomation"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.TopDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormDoiPassActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.OTPQuenMK"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Admin.AddNewNewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.OTPPhoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProductReviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.NewOrderDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Admin.UpdateProduct"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Admin.ChatAdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Admin.CheckProductSale"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Admin.AddNewSaleProduct"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Admin.DonHangThanhCongDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Admin.DonHangBiHuyDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.RechargeMoneyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,6 +84,45 @@
                     android:host="app"
                     android:scheme="demozpdk" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:name=".Activity.PaySuccess"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.DuAnOderFoodNhom9" />
+        <activity
+            android:name=".Activity.PayBillActivity"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Activity.CartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.BurgerDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.BurgerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Admin.ProductDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Admin.CallActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Admin.AddNewProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
