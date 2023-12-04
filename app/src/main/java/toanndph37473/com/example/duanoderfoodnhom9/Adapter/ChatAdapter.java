@@ -30,6 +30,7 @@ import toanndph37473.com.example.duanoderfoodnhom9.Model.Messenger;
 import toanndph37473.com.example.duanoderfoodnhom9.Model.UserSession;
 import toanndph37473.com.example.duanoderfoodnhom9.R;
 
+
 public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
     List<Messenger> list = new ArrayList<>();
     Context context;
@@ -118,4 +119,3 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
         }
     }
 }
-
