@@ -85,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:hint="User Name"
                 android:paddingStart="30dp"
-                android:text="0372797490" />
+                android:text="0948496993" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -110,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:text="22052003" />
+                android:text="12321" />
         </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

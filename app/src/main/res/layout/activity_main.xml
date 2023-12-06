@@ -128,20 +128,22 @@
                 app:menu="@menu/bottom_nav_menu"
 
 
-                />
+                >
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ea4445"
+                    android:src="@drawable/notification"
+                    app:tint="#FFFF"
+                    android:layout_gravity="center"
+                    />
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
         </com.google.android.material.bottomappbar.BottomAppBar>
 
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#ea4445"
-            android:src="@drawable/notification"
-            app:layout_anchor="@id/bottomAppBar"
-            app:tint="#FFFF"
 
-            />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

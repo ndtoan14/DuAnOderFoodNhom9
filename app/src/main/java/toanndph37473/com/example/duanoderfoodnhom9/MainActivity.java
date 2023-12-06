@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-//        binding.bottomNavigationView.setOnItemSelectedListener(item ->{
+        binding.bottomNavigationView.setOnItemSelectedListener(item ->{
 //            switch (item.getItemId()){
 //                case R.id.home:
 //                    fragmentClass= HomeFragment.class;
@@ -158,11 +158,66 @@ public class MainActivity extends AppCompatActivity {
 //                        fragmentManager.beginTransaction().setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.frameLayout, fragment).commit();
 //                    }
 //                    break;
+                int itemId = item.getItemId();
+            if (itemId == id.home) {
+                    fragmentClass= HomeFragment.class;
+                    tvTieuDe.setText("Yummi Food");
+                    try {
+                        fragment = (Fragment) fragmentClass.newInstance();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    if (fragment != null) {
+                        FragmentManager fragmentManager = getSupportFragmentManager();
+                        fragmentManager.beginTransaction().setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.frameLayout, fragment).commit();
+                    }
+            }
+            if(itemId == id.news){
+                                    fragmentClass= NewsFragment.class;
+                    tvTieuDe.setText("News");
+                    try {
+                        fragment = (Fragment) fragmentClass.newInstance();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    if (fragment != null) {
+                        FragmentManager fragmentManager = getSupportFragmentManager();
+                        fragmentManager.beginTransaction().setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.frameLayout, fragment).commit();
+                    }
+            }
+            if(itemId == id.user){
+                                    fragmentClass= UserFragment.class;
+                    tvTieuDe.setText("User");
+                    try {
+                        fragment = (Fragment) fragmentClass.newInstance();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    if (fragment != null) {
+                        FragmentManager fragmentManager = getSupportFragmentManager();
+                        fragmentManager.beginTransaction().setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.frameLayout, fragment).commit();
+                    }
+            }
+            if(itemId == id.chat){
+                                    fragmentClass= ChatFragment.class;
+                    tvTieuDe.setText("Chat");
+                    try {
+                        fragment = (Fragment) fragmentClass.newInstance();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    if (fragment != null) {
+                        FragmentManager fragmentManager = getSupportFragmentManager();
+                        fragmentManager.beginTransaction().setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.frameLayout, fragment).commit();
+                    }
+            }
+
 //            }
 //
+
 //
-//            return true;
-//        });
+            return true;
+        });
 
     }
 

@@ -54,7 +54,7 @@ public class SignUpActivity extends AppCompatActivity {
                     @Override
                     public void onCodeSent(@NonNull String verificationId, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                         // Mã OTP đã được gửi đến số điện thoại của người dùng
-                        Toast.makeText(SignUpActivity.this, "Verification code sent", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Verification code sent", Toast.LENGTH_SHORT).show();
 
                         // Chuyển sang Activity để nhập mã OTP
                         Intent intent = new Intent(SignUpActivity.this,OTPPhoneActivity.class);
